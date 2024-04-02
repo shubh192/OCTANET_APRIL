@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
 
 :root {
-  --primary-color: #fead53;
+  --primary-color: #ff6347; 
   --text-dark: #333333;
   --text-light: #ffffff33;
   --extra-light: #f3f4f6;
@@ -34,24 +34,28 @@ body {
 }
 
 nav {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  max-width: var(--max-width);
-  padding: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 1;
-}
+    position: absolute; 
+    top: 0;
+    left: 92; 
+    width: 100%;
+    transform: translateX(10%);
+    max-width: var(--max-width);
+    padding: 1rem; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1; 
+    background-color: yellowgreen; 
+    color: var(--text-light); /* added text color */
+  }
+  
 
-.nav__logo a {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--extra-light);
-}
+  .nav__logo a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:whitesmoke; /* new color */
+  }
+  
 
 .nav__links {
   list-style: none;
@@ -131,16 +135,23 @@ nav {
 }
 
 .btns button {
-  padding: 0.5rem 2rem;
-  color: var(--extra-light);
-  font-size: 1rem;
-  background-color: transparent;
-  outline: none;
-  border: 2px solid var(--extra-light);
-  border-radius: 2rem;
-  cursor: pointer;
-  transition: 0.3s;
-}
+    padding: 0.7rem 2rem;
+    color: #333333;
+    font-size: 1.2rem; 
+    background-color: #fead53; 
+    outline: none;
+    border: 2px solid #fead53; 
+    border-radius: 0.5rem; 
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btns button:hover {
+    background-color: #ff6347; 
+    border-color: #ff6347; 
+    color: #ffffff; 
+  }
+  
 
 button.read__more {
   background-color: var(--extra-light);
@@ -157,18 +168,25 @@ button.our__blogs:hover {
 }
 
 .chevrons span {
-  height: 40px;
-  width: 40px;
-  font-size: 1.5rem;
-  color: var(--extra-light);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  border: 2px solid var(--extra-light);
-  cursor: pointer;
-  transition: 0.3s;
-}
+    height: 50px; 
+    width: 50px; 
+    font-size: 2rem; 
+    color: #333333; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid #333333; 
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .chevrons span:hover {
+    background-color: #fead53; 
+    color: #ffffff; 
+    border-color: #fead53; 
+  }
+  
 
 .chevrons span:hover {
   background-color: var(--text-light);
@@ -209,17 +227,25 @@ form h4 {
 }
 
 form button {
-  margin-top: 1rem;
-  padding: 1rem;
-  font-size: 1rem;
-  font-weight: 600;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  background-color: var(--primary-color);
-  color: var(--extra-light);
-  cursor: pointer;
-}
+    margin-top: 2rem; 
+    padding: 1.5rem; 
+    font-size: 1.2rem; 
+    font-weight: 700;
+    outline: none;
+    border: 2px solid #ff6347; 
+    border-radius: 10px; 
+    background-color: #ff6347; 
+    color: #ffffff; 
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #fead53; 
+    color: #333333; 
+    border-color: #fead53; 
+  }
+  
 
 .bottom__tracker {
   position: absolute;
